@@ -80,6 +80,11 @@ variable "proxmox_vm_memory" {
   default     = 1024
 }
 
+variable "proxmox_vm_numa" {
+  description = "Proxmox Virtual Machine (VM) NUMA"
+  default     = true
+}
+
 variable "proxmox_vm_hotplug" {
   description = "Proxmox Virtual Machine (VM) Hotplug"
   default     = "network,disk,usb,memory,cpu"
