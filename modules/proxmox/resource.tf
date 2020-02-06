@@ -18,6 +18,8 @@ resource "proxmox_vm_qemu" "cloudinit" {
   sockets       = "${var.proxmox_vm_cpu_sockets}"
   memory        = "${var.proxmox_vm_memory}"
 
+  hotplug       = "${var.proxmox_vm_hotplug}"
+
   disk {
     id          = 0
     type        = "${var.proxmox_vm_disk_type}"

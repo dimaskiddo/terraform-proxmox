@@ -80,6 +80,11 @@ variable "proxmox_vm_memory" {
   default     = 1024
 }
 
+variable "proxmox_vm_hotplug" {
+  description = "Proxmox Virtual Machine (VM) Hotplug"
+  default     = "network,disk,usb,memory,cpu"
+}
+
 variable "proxmox_vm_disk_type" {
   description = "Proxmox Virtual Machine (VM) Disk Type"
   default     = "scsi"
