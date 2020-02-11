@@ -52,7 +52,7 @@ variable "proxmox_vm_os_type" {
 
 variable "proxmox_vm_agent" {
   description = "Proxmox Virtual Machine (VM) Agent Enabled"
-  default     = 1
+  default     = 0
 }
 
 variable "proxmox_vm_auto_start" {
@@ -82,12 +82,12 @@ variable "proxmox_vm_memory" {
 
 variable "proxmox_vm_numa" {
   description = "Proxmox Virtual Machine (VM) NUMA"
-  default     = true
+  default     = false
 }
 
 variable "proxmox_vm_hotplug" {
   description = "Proxmox Virtual Machine (VM) Hotplug"
-  default     = "network,disk,usb,memory,cpu"
+  default     = "network,disk,usb"
 }
 
 variable "proxmox_vm_disk_type" {
