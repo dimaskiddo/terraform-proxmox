@@ -42,7 +42,7 @@ variable "proxmox_vm_template" {
 
 variable "proxmox_vm_full_clone" {
   description = "Proxmox Virtual Machine (VM) is Full Clone"
-  default     = false
+  default     = true
 }
 
 variable "proxmox_vm_os_type" {

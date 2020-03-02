@@ -32,5 +32,6 @@ module "example_instance" {
   proxmox_vm_net_ipv4_gateway = "172.10.0.1"
   proxmox_vm_dns_nameserver   = "172.10.0.1"
   proxmox_vm_dns_searchdomain = "YOUR_DOMAIN"
+  proxmox_vm_ssh_password     = "YOUR_SSH_PASSWORD"
   proxmox_vm_ssh_keys         = "YOUR_SSH_PUBLIC_KEYS"
 }
