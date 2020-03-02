@@ -5,7 +5,7 @@ resource "proxmox_vm_qemu" "cloudinit" {
   target_node   = "${var.proxmox_cluster_node}"
   pool          = "${var.proxmox_cluster_pool}"
 
-  clone         = "${var.proxmox_vm_template}"
+  clone         = "${var.proxmox_cluster_node}-${var.proxmox_vm_template}"
   full_clone    = "${var.proxmox_vm_full_clone}"
 
   os_type       = "${var.proxmox_vm_os_type}"
